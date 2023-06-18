@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native'
 import axios from 'axios';
 
-const NewList = ({ navigation }) => {
+const NewsList = ({ navigation }) => {
     const [news, setNews] = useState([]);
 
     useEffect (() => {
@@ -60,4 +60,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default NewList;
+export default NewsList;
