@@ -20,11 +20,14 @@ const styles = StyleSheet.create({
         padding: 16,
     },
     title: {
-        fontSize: 18,
+        fontSize: 22,
         fontWeight: 'bold',
+        marginBottom: 15,
+        textAlign: 'justify',
     },
     description: {
-        fontSize: 14,
+        fontSize: 18,
+        textAlign: 'justify',
     },
 });
 

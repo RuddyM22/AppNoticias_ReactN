@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         padding: 16,
     },
     newsItem: {
-        marginBottom: 16,
+        marginBottom: 20,
     },
     title: {
         fontSize: 18,
