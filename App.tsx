@@ -14,11 +14,11 @@ function App() {
         name="NewsList"
         component={NewsList}
         options={{ title: 'Últimas noticias' }}
-        />
+      />
         <Stack.Screen
         name="NewsDetail"
         component={NewsDetail}
-        options={{ title: 'Detalle de noticias' }}
+        options={{title: 'Detalle de noticias'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

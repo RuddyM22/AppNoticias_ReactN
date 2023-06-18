@@ -17,7 +17,7 @@ const NewsList = ({ navigation }) => {
                     apiKey: 'dcc37785e0ce44919deafb1632051601'
                 },
             });
-            setNews = (response.data.articles);
+            setNews(response.data.articles);
         } catch (error) {
             console.log(error);
         }
@@ -27,16 +27,16 @@ const NewsList = ({ navigation }) => {
         <View style={styles.container}>
             <FlatList
                 data={news}
-                renderItem={({ item }) =>{
+                renderItem={({ item }) =>(
                     <TouchableOpacity
                     style={styles.newsItem}
                     key={item.id}
-                    onPress= {() => navigation.navigate('NewsDetail', { newsItem: item })}
+                    onPress= {() => navigation.navigate('NewsDetail', {newsItem: item})}
                     >
-                        <Text>{item.title}</Text>
-                        <Text>{item.description}</Text>
+                        <Text style={styles.title}>{item.title}</Text>
+                        <Text style={styles.description}>{item.description}</Text>
                     </TouchableOpacity>
-                }}
+                )}
                 keyExtractor = {(item) => item.id?.toString()}
             />
         </View>
